@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-12">
+    <h4>Добавить продукт</h4>
+  </div>
+  <div class="col-4">
+    <input type="text" class="form-control" placeholder="Наименование" [(ngModel)]="name">
+  </div>
+  <div class="col-4">
+    <input type="text" class="form-control" placeholder="Количество" [(ngModel)]="amount">
+  </div>
+  <div class="col-4">
+    <button class="btn btn-outline-primary btn-sm" (click)="onAddSale()">Добавить</button>
+  </div>
+</div>

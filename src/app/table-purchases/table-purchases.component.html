@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-12">
+    <h1>{{title}}</h1>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Наименование</th>
+        <th scope="col">Количество</th>
+        <th scope="col">Статус</th>
+        <th scope="col">Удалить</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let purchase of sale">
+        <th scope="row">{{purchase.id}}</th>
+        <td>{{purchase.name}}</td>
+        <td>{{purchase.amount}}</td>
+        <td>{{purchase.status}}</td>
+        <td><button class="btn btn-outline-danger btn-sm mr-5">Удалить</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
